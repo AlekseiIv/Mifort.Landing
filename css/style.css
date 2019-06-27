@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.head-main {
+	position: relative;
+	height: 100vh;
+	background-color: #cbfff2;
+	background-image: linear-gradient(to bottom, #CBFFF2, #FFFEC7);
+}
+
+.head-logo {
+	height: 4em;
+	width: 4em;
+	margin-top: 2em;
+}
+
+.head-title {
+	margin-top: 5em;
+	text-align: center;
+}
+
+.account-entrence {
+	position: relative;
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 3em;
+	padding-left: 3em;
+	color: #000000;
+	font-weight: bold;
+}
+
+.join-us::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/join-us.png");
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	left: 1em;
+}
+
+.log-in::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/login.png");
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	left: 1em;
+}
+
+.main-nav nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main-nav ul {
+	list-style: none;
+	margin-top: 0.25em;
+	margin-right: 3em;
+	visibility: hidden;
+}
+
+.main-nav ul li {
+	display: inline-block;
+}
+
+.main-nav nav div,
+.main-nav nav ul {
+	display: inline-block;
+}
+
+/*.fixed{
+	position: fixed;
+	top: 0;
+  	left: 0;
+	width: 100%;
+	z-index: 5;
+	background-color: #ffffff;
+	box-shadow: 0 1px 5px 3px rgba(0,0,0,0.3);
+}*/
+
+.menu {
+	cursor: pointer;
+	padding-right: 1.5em;
+	position: relative;
+	width: 15px;
+	height: 25px;
+}
+.menu-global {
+	backface-visibility: hidden;
+	position: absolute;
+	left: 0;
+	border-top: 5px solid black;
+	width: 100%;
+	transition: 0.55s;
+}
+.menu-top {
+	top: 0;
+}
+.menu-middle {
+	top: 10px;
+}
+.menu-bottom {
+	top: 20px;
+}
+.menu-top-click {
+	backface-visibility: hidden;
+	top: 15px;
+	transform: rotate(50deg);
+	transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+	opacity: 0;
+}
+.menu-bottom-click {
+	backface-visibility: hidden;
+	top: 15px;
+	transform: rotate(-410deg);
+	transition: 0.55s 0.5s;
+}
+
+.main-nav ul a {
+	margin-left: 1em;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.head-promo {
+	display: flex;
+	margin-top: 3em;
+}
+
+.promo-image {
+	float: left;
+	margin: 0 3em;
+	height: 350px;
+	width: 500px;
+}
+
+.head-promo p {
+	margin-top: 1em;
+	width: 300px;
+}
+
+.btn {
+	width: 150px;
+	margin-left: 5em;
+	box-shadow: 0 1px 5px 3px rgba(0,0,0,0.3);
+}
+
+.head-promo .btn,
+.video-container .btn,
+.price-item .btn {
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+.head-promo .btn:hover,
+.video-container .btn:hover {
+	font-weight: bold;
+	background-color: rgba(f,f,f,0.6);
+}
+
+.btn-label {
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	white-space: pre-line;
+}
+
+.scroll-btn {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	height: 50px;
+	width: 90px;
+	margin-left: -45px;
+	text-decoration: none;
+	color: black; 
+}
+
+.join-us:hover,
+.log-in:hover,
+.scroll-btn:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.scroll-btn::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/scroll-down.png");
+	height: 50px;
+	width: 50px;
+	top: 20px;
+	left: 50%;
+	margin-left: -25px;
+}
+
+.features h3,
+.reviews h3,
+.pricing h3 {
+	margin-top: 5em;
+	text-align: center;
+}
+
+.features > p,
+.reviews > p,
+.pricing > p {
+	text-align: center;
+}
+
+.features-list {
+	display: flex;
+	list-style: none;
+	margin: 3em 0 5em 0;
+}
+
+.feature-item {
+	padding-top: 3em;
+	border-left: 1px solid #d9d9d9;
+}
+
+.features-item img {
+	height: 150px;
+	width: 150px;
+}
+
+.carousel {
+	position: relative;
+}
+
+.features .carousel-indicators {
+	position: absolute;
+	width: 350px;
+	left: -5em;
+	top: 0;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	transform: rotate(-90deg);
+}
+.features .carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	margin: 0 50px;
+	background-color: #000000;
+	cursor: pointer;
+}
+
+.carousel-item h3 {
+	margin-top: 1em;
+	text-align: left;
+}
+
+.carousel-text {
+	padding-left: 2em;
+	vertical-align: top;
+}
+
+.carousel-list {
+	list-style: none;
+}
+
+.carousel-list li {
+	position: relative;
+	padding-left: 1.5em;
+}
+
+.carousel-list li::before {
+	content: "";
+	background-image: url("../img/list-style.png");
+	background-size: 1em;
+	position: absolute;
+	left: 0;
+	top: 25%;
+	height: 1em;
+	width: 1em;
+}
+
+.video-container {
+	margin: 5em 0;
+}
+
+.learn-more,
+.video-preview {
+	padding: 5%;
+	height: 45%;
+	margin: 10px 0;
+	text-align: center;
+	border: solid 1px #f2f2f2;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+.learn-more p,
+.video-preview p {
+	margin-top: 2em;
+}
+
+.learn-more .btn,
+.video-preview .video-play,
+.price-item .btn {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.video-play {
+	display: block;
+	background-image: url("../img/video-play.png");
+	background-size: 3em;
+	height: 3em;
+	width: 3em;
+}
+
+.btn:hover,
+.learn-more a:hover,
+.video-play:hover {
+	opacity: 0.6;
+}
+
+.reviews .carousel-indicators {
+	bottom: -60px;
+}
+
+.reviews .carousel-inner {
+	margin-bottom: 60px;
+	padding: 3em 2em;
+	border-radius: 10px;
+	box-shadow: 0 1px 5px 3px rgba(0,0,0,0.3);
+}
+
+.reviews .carousel-indicators li {
+	margin: 0 5em;
+	background-color: black;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+}
+
+.prices,
+.price-item {
+	margin-bottom: 60px;
+	padding: 2em;
+	border-radius: 10px;
+	box-shadow: 0 1px 5px 3px rgba(0,0,0,0.3);
+}
+
+.price-item:first-child {
+	box-shadow: none;
+}
+
+.prices {
+	text-align: center;
+}
+
+.price-item {
+	margin: auto 0;
+}
+
+.price-title {
+	font-size: 20px;
+}
+
+.price-differences {
+	font-size: 12px;
+}
+
+.price-sale {
+	font-size: 10px;
+	margin-top: 2em;
+}
+
+.crossed {
+	text-decoration: line-through;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.price sup,
+.price sub {
+	font-size: 15px;
+}
+
+.price {
+	font-size: 50px;
+}
+
+.foot-copyright {
+	position: relative;
+	background-color: rgb(220,220,220);
+	padding: 5em;
+}
+
+.copyright {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	font-size: 12px;
+}
+
+.foot-subscribe {
+	position: relative;
+	padding: 5em;
+}
+
+.subscribe {
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.form-control {
+	position: relative;
+}
+
+.submit {
+	position: absolute;
+	top: 5em;
+	right: -5em;
+	background-image: url("../img/submit.png");
+	background-size: 45px;
+	height: 45px;
+	width: 45px;
+}
